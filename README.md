@@ -6,7 +6,7 @@
 > 将.ssh/(用户名)-ssh-key.pub 中的内容复制粘贴到谷歌云实例的ssh信息,然后本地终端登录
 
 `ssh -i .ssh/(用户名)-ssh-key (用户名)@(实例IP)`
-
-> ssh-copy-id -i ~/.ssh/your-key-name.pub root@35.189.188.31
-ssh-add ~/.ssh/your-key-name
-当用旧的ssh key 登录主机 需要更改主机rsa 执行 ssh-keygen -f "/home/senmonster/.ssh/known_hosts" -R 104.199.246.91(new host ip)
+## 附加说明
+`ssh-copy-id -i ~/.ssh/your-key-name.pub 用户名@35.189.188.31` 
+`ssh-add ~/.ssh/your-key-name` 
+当用旧的ssh key 登录主机 需要更改主机rsa 执行 `ssh-keygen -f "/home/senmonster/.ssh/known_hosts" -R 104.199.246.91(new host ip)`
