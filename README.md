@@ -16,8 +16,11 @@
 `ssh-keygen -f "/home/senmonster/.ssh/known_hosts" -R 104.199.246.91(new host ip)`
 
 # 机器学习环境配置
-`wget http://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh  && bash ./Anaconda3-5.0.0-Linux-x86_64.sh`
-安装包完成后 `source ~/.bashrc`
+```
+wget http://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh  && bash ./Anaconda3-5.0.0-Linux-x86_64.sh
+```
+安装包完成后 
+`source ~/.bashrc`
 # 配置jupyter 后端登录
 `jupyter notebook --generate-config && vim ~/.jupyter/jupyter_notebook_config.py`
 > insert:
