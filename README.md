@@ -23,7 +23,7 @@ wget http://repo.continuum.io/archive/Anaconda3-5.0.0-Linux-x86_64.sh  && bash .
 `source ~/.bashrc`
 # 配置jupyter 后端登录
 `jupyter notebook --generate-config && vim ~/.jupyter/jupyter_notebook_config.py`
-> insert:
+insert:
 c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.notebook_dir = u'/home/topppyang/'
@@ -40,7 +40,7 @@ pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install 
 那就 cd /home/senmonster/anaconda3/lib/python3.7/site-packages/jupyter_contrib_nbextensions/nbextensions
 该目录下的文件夹为扩展名，进入扩展名下的js文件名为以下命令/的后半部分
 
-> 若修改主题后导致print打印不全，则：
+若修改主题后导致print打印不全，则：
 cd ~/.jupyter/custom &&vim custom.css
 命令模式下输入/ 查找 div.output_area
 再i进入编辑模式 增加
@@ -52,7 +52,6 @@ padding: 13px;
 # cell 多输出 以及 auto reaload
 `vim ~/.ipython/profile_default/ipython_config.py`
 insert:
-> 
 c = get_config()
 c.InteractiveShell.ast_node_interactivity = "all"
 c.InteractiveShellApp.exec_lines = ['%autoreload 2']
@@ -61,7 +60,7 @@ c.TerminalInteractiveShell.autoindent = False
 source ~/.ipython/profile_default/ipython_config.py
 
 
->
+
 '/opt/conda/bin/python' -m conda install pkname 安装包到指定环境（路径由sys.executable得到）
 top 10 largest directories
 du -a / | sort -n -r | head -n 10
